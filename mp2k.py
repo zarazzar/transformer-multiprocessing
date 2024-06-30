@@ -82,9 +82,9 @@ def main(execution_time, num_cores):
 
 if __name__ == '__main__':
     # Set the number of partitions and cores
-    chunk_size = 650
+    chunk_size = 1250
     total_data_size = len(df)
-    num_cores = 4
+    num_cores = 2
     num_partitions = min((total_data_size + chunk_size - 1) // chunk_size, num_cores)
 
     print(f"Total data size: {total_data_size}")
